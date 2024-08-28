@@ -21,6 +21,7 @@
         tailwind.config = {
           theme: {
             extend: {
+              bg:"url('./image/bg.jpg')",
               colors: {
                 clifford: '#da373d',
               }
@@ -41,8 +42,36 @@
     <!-- header section  -->
      <header class="">
         <!-- nav  -->
-        <nav>
-
+        <nav class="lg:px-5">
+          <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right bg-[#ABEF5F] -rotate-45 px-1 py-1 rounded-full"></i> Rinterio</a>
+            </div>
+            <div class="">
+              <ul class="text-[#737373] lg:flex gap-5 hidden lg:px-24">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:gap-4 lg:flex">
+              <i class="fa-solid fa-magnifying-glass bg-[#FFFFFF] border border-gray-300 rounded-full w-7 h-7 content-center"></i>
+              <i class="fa-solid fa-cart-shopping bg-[#FFFFFF] border border-gray-300 rounded-full w-7 h-7 content-center"></i>
+            </div>
+            <div class="ml-3">
+              <button class="hidden lg:block lg:text-lg lg:font-bold lg:bg-[#ABEF5F] lg:rounded-3xl px-5 py-2">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white text-sm content-center -rotate-45 rounded-full w-6 h-6
+                "></i></button>
+            </div>
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost">
+                <div>
+                  <i class="fa-solid fa-bars lg:hidden bg-[#E9E9E9] rounded-full"></i>
+                </div>
+              </button>
+            </div>
+          </div>
         </nav>
          <!-- banner  -->
         <section>
@@ -151,10 +180,42 @@
             </div>
         </section>
 
+        <!-- Our Latest Portfolio -->
+         <section class="lg:px-44 mb-24">
+          <div class="flex justify-center">
+            <button class="mt-10 mb-5 bg-[#ABEF5F33] rounded-3xl px-8 py-3 text-xs font-bold"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</button>
+           </div>
+           <!-- title  -->
+            <div class="text-center space-y-7 px-3 mb-14">
+              <h1 class="text-3xl lg:text-5xl font-bold">Our Latest Portfolio</h1>
+              <p class="text-[#494949] text-lg lg:w-1/2 px-5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+
+            <!-- grid cards  -->
+             <div class="grid grid-cols-1 lg:grid-cols-2">
+              <div class="grid grid-cols-1 lg:grid-cols-2 bg-[] border border-1 border-[#E9E9E9] rounded-lg lg:p-6">
+                <!-- img  -->
+                <div>
+                  <img src="image/img1.png" alt="">
+                </div>
+                <!-- text  -->
+                <div>
+                  <h2>Commercial</h2>
+                  <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                  <h2>View Details</h2>
+                </div>
+                
+              </div>
+              <div>
+                <img src="image/img2.png" alt="">
+              </div>
+             </div>
+         </section>
+
       <!-- Discuss Next Project  -->
-       <section class="bg-gray-100">
+       <section class="bg-[url('./image/bg.jpg')] bg-no-repeat bg-cover bg-gray-100">
         <div class="flex justify-center">
-          <button class="mt-10 mb-5 bg-[#ABEF5F33] rounded-2xl px-8 py-3 text-xs font-bold"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
+          <button class="mt-10 mb-5 bg-[#ABEF5F33] rounded-3xl px-8 py-3 text-xs font-bold"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
          </div>
          <!-- title  -->
           <div class="text-center space-y-7 px-3 mb-14">
@@ -179,8 +240,8 @@
           <p class="text-lg text-[#737373] lg:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
         <!-- links -->
-        <div class="mb-10">
-          <ul class="text-[#E9E9E9] flex justify-between  lg:px-24">
+        <div class="mb-10 ">
+          <ul class="text-[#E9E9E9] grid grid-flow-row sm:grid-flow-col gap-5 text-center lg:px-24">
             <li><a href="">Home</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Portfolio</a></li>
@@ -190,7 +251,7 @@
         </div>
         <!-- button  -->
          <div class="flex justify-center">
-          <button class="bg-[#ABEF5F] rounded-3xl px-10 py-2">Book Consult  <i class="fa-solid fa-arrow-right bg-black text-white w-7 h-7 rounded-full content-center -rotate-45"></i></button>
+          <button class="bg-[#ABEF5F] rounded-3xl  text-xl font-bold px-10 py-2">Book Consult  <i class="fa-solid fa-arrow-right bg-black text-white text-lg w-7 h-7 rounded-full content-center -rotate-45"></i></button>
          </div>
        </footer>
 </body>
